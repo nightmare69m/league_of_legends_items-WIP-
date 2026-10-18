@@ -1,2 +1,5 @@
-# league_of_legends_items-WIP-
-i created league of legends items web which suggest items for champions based on status (unfinished)
+# League of Legends Items Viewer (WIP)
+
+A mini web application built with JavaScript to display and filter game items and suggest choices based on champion status.
+
+- **Status:** Work in Progress (Personal Practice)
