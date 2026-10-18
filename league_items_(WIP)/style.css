@@ -1,0 +1,227 @@
+body{
+    background-image: url(pics/6824431.jpg);
+    color: bisque;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.face {
+  display: flex;
+  flex-direction: column;     
+  align-items: center;        
+  max-width: 400px;
+  margin: 0 auto;            
+
+  background: radial-gradient(circle at top, #2c3e50, #0b1420);
+  padding: 40px 20px;
+  border-radius: 30px;
+  text-align: center;       
+  border: 2px solid #d4af37;
+}
+
+.opening {
+  font-size: 350%;
+  margin-bottom: 20px;
+}
+
+.interface {
+  font-size: 130%;
+}
+
+.category-title {
+  display: inline-block;
+  padding: 14px 36px;
+  margin: 50px auto 30px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #e6d8a3;
+  background: radial-gradient(circle at top, #2c3e50, #0b1420);
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  
+}
+
+
+
+.documentary-section {
+  text-align: center;
+}
+
+
+/* Flex container */
+.items-flex {
+  display: flex;
+  flex-wrap: wrap;        
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Flex items (2 columns) */
+.flex-item {
+  position: relative;
+  width: calc(50% - 10px); /*thiss is --> 2 columns */
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Image */
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Overlay */
+.item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 15px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.flex-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.flex-item:hover img {
+  transform: scale(1.1);
+}
+
+.flex-item:hover .item-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Title */
+.category-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px 0;
+  
+}
+
+/* the pop up for java script section */
+
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: radial-gradient(circle at top, #2c3e50, #0b1420);
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+    color: #e6d8a3;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: popupFadeIn 0.3s ease;
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #d4af37;
+    transition: color 0.3s;
+}
+
+.close-popup:hover {
+    color: #ffd700;
+}
+
+.popup-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4af37;
+}
+
+.popup-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popup-body img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #d4af37;
+}
+
+.popup-details h4 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.item-stats {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+
+}
+
+  
+
+/* el font ya negm */
+@font-face {
+    font-family: 'Spiegel';
+    src: url('https://lolstatic-a.akamaihd.net/webfonts/live/fonts/spiegel/spiegel-regular.woff2') format('woff2');
+}
